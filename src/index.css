@@ -1,0 +1,188 @@
+/* General App Styles */
+body{
+  background-color: #007f5f;
+}
+
+.App {
+  background-color: #007f5f; /* Dark background for contrast */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif; /* Clean, modern font */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(255, 255, 255); /* Highlight the title */
+}
+
+/* FeedbackForm Styles */
+.feedback-form {
+  background-color: #2b9348;
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for form */
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.rating-label {
+  display: inline-block;
+}
+
+.custom-radio {
+  background-color: #ffff3f;
+  color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + .custom-radio {
+  background-color: #f9a620;
+  color: white;
+}
+
+/* Feedback Textarea */
+.feedback-text {
+  width: 100%;                /* Full width */
+  max-width: 560px;            /* Maximum width */
+  height: 100px;               /* Fixed height */
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #036666;
+  font-family: 'Roboto', sans-serif;
+  resize: none;                /* Disable resizing */
+  margin-top: 10px;
+  margin-bottom: 15px;
+  
+}
+.feedback-text::placeholder {
+  color: rgb(184, 174, 174);
+}
+
+
+
+.send-button {
+  background-color: #004b23;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #006400;
+}
+/* FeedbackList Styles */
+.feedback-list {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 600px;
+  
+}
+
+/* Feedback Card Styling */
+.feedback-card {
+  background-color: #036666;
+  color: #ffffff;
+  
+  padding: 10px;                  /* Reduced padding */
+  border-radius: 12px;
+  margin-bottom: 15px;            /* Reduced bottom margin */
+  display: flex;
+  align-items: flex-start;        /* Align items to the top to stretch naturally */
+  position: relative;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  transition: transform 0.3s ease;
+  word-wrap: break-word;  
+  
+}
+
+.rating-circle {
+  background-color: #fb6107;
+  color: white;
+  margin-top: -30px;
+  margin-left: -30px;
+  font-size: 25px;                /* Reduced font size */
+  font-weight: bold;
+  width: 80px;                    /* Reduced width */
+  height: 80px;                   /* Reduced height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;                 /* Prevent circle from shrinking */
+}
+.rating-circle:hover{
+  background-color: #efcfdc;
+}
+
+.feedback-text {
+  flex: 1;                        /* Take up the remaining space */
+  margin-left: 15px;              /* Reduced margin-left */
+  font-size: 25px;                /* Reduced font size */
+  font-family: 'Roboto', sans-serif;
+  word-break: break-word;         /* Break long words to avoid overflow */
+  margin-right: 40px;  
+  color: white;           /* Adjusted margin-right for delete button space */
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: yellow;
+  font-size: 16px;                /* Reduced font size */
+  cursor: pointer;
+  position: absolute;
+  top: 10px;                      /* Adjusted top position */
+  right: 10px;                    /* Adjusted right position */
+  transition: color 0.3s ease;
+  font-size: 30px;
+}
+
+.delete-button:hover {
+  color: white;
+  font-size: 40px;
+}
+
+
+/* Placeholder when no feedback */
+.no-feedback {
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+
